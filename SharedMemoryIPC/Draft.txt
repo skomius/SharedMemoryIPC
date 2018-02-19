@@ -1,0 +1,97 @@
+﻿Use private namespace for and thats all for security
+This saves from accident but not from intentional actions
+
+create method and connect method they are static 
+and returns shared memory object. It has to overloads create and connect from handle
+and with name, option client can supply private space object 
+Craete with name or nameless and its returns 
+connect with handle and with name
+
+so what to use mutex or event (.NET class) if event mix to interlocked 
+
+write and read byte, string, byte array
+write read async method
+write and wait for replay method
+
+
+program is for two processes 
+if one to connect to second process need to create second sharedMemory object
+
+create private space class 
+open private name space is static method
+strong named name space
+
+strong named is just generated long key. It can be used string.
+
+klausimai ispresti: 
+craete and connect overloads 
+more acurate methods read  write methods 
+
+SharedmemmoryIPC class  
+
+mode bit
+dispose
+make with two events 
+read and write wrapps around  shared memory reads and writes 
+waitforreply 
+waittoconnection
+connect
+reply
+Will make event thru waitforconnection method 
+first try duplicate
+
+one  viena project in this project  
+
+try with duplicate 
+
+
+
+out of mapped wiev expcetion
+ar offset pasikelia priklausomai nuo poiterio rusies
+patikrinti offsetus 
+test
+
+to create object accsess mask use create(object)ex arba 
+EventWaitHandleAccessRule ad = new EventWaitHandleAccessRule();
+
+sharedMemory constructor overload with security descriptor sharedMemorySecurity: NativeObjectSecurity 
+create events with eventwathandlesecurity class 
+create IPC from IPC name. IPC name same ass shared memory object 
+
+sukurti shared memory security klase 
+
+create protection error for sharedmemory already exist with this name for getLastError() 183  
+
+setoffset() end use it in write read methods 
+
+change ocbject  access rule use with setACL
+
+nativeobject security has methods object name or handles
+
+generate names from sharedMemoryname
+
+conditional variables 
+
+sharedmemoryIPC inherits from sharedMemory
+
+
+new future
+ref remote objects
+async  
+
+
+eventhelperclass +
+uzbaigti visus metodus 
+sutvarkyti grafikus 
+
+sukrti i traukti i hconnect pipline mechanizma () galima padaryti kaip extension metoda paiplainui) 
+sukurti authorizavimo mechanizma 
+sutvarkyti FileMapSecurity
+sutvarkyti initalize method 
+sutvarkyti eventhandleex and change
+sutvarkyti connect pasikartojimus. 
+istestuoti ar galimaperzengti dydi
+istestuoti barrier pavyzdy advanced threadin
+check disposing IPMemmory
+
+pabandyti pradziai dublikuoti
